@@ -8,7 +8,7 @@ public class Student {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;   // PHẢI dùng Integer, không dùng int
+    private long id;   // PHẢI dùng long, không dùng int
 
     private String name;
     private String email;
@@ -17,11 +17,11 @@ public class Student {
     }
 
     // Getter & Setter
-    public Integer getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(long id) {
         this.id = id;
     }
 
